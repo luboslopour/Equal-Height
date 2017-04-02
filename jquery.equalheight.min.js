@@ -3,8 +3,6 @@
  *
  * Copyright (c) 2017 Lubos Lopour
  * Dual licensed under the MIT and GPL licenses.
- * Uses the same license as jQuery, see:
- * http://docs.jquery.com/License
  *
  * @version 1.0.0
  */
