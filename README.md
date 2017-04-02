@@ -4,7 +4,7 @@ jQuery plugin - Simple responsive equal heights
 ## Usage
 ### Initialize on load
 ```
-$(window).load(function() {
+$(window).on('load',function() {
   equalheight('.elem .subelem');
   equalheight('.elem');
 });
