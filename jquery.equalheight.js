@@ -8,18 +8,18 @@
  *
  * @version 1.0.0
  */
-(function($) {
-    equalheight = function(a) {
-        var e,b = 0,
-            c = 0,
-            d = new Array,
-            f = 0;
-        $(a).each(function() {
-            if (e = $(this), $(e).css('min-height', 'auto'), f = e.position().top, c != f) {
-                for (g = 0; g < d.length; g++) d[g].css('min-height', b);
-                d.length = 0, c = f, b = e.height(), d.push(e)
-            } else d.push(e), b = b < e.height() ? e.height() : b;
-            for (g = 0; g < d.length; g++) d[g].css('min-height', b)
+! function() {
+    $.fn.equalheight = function() {
+        var h, i = 0,
+            t = 0,
+            e = new Array,
+            n = 0;
+        $(this).each(function() {
+            if (h = $(this), $(h).css("min-height", "auto"), n = h.position().top, t != n) {
+                for (g = 0; g < e.length; g++) e[g].css("min-height", i);
+                e.length = 0, t = n, i = h.height(), e.push(h)
+            } else e.push(h), i = i < h.height() ? h.height() : i;
+            for (g = 0; g < e.length; g++) e[g].css("min-height", i)
         })
-    };
-})(jQuery);
+    }
+}(jQuery);
